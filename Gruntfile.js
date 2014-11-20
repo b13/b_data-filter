@@ -12,13 +12,6 @@ module.exports = function(grunt) {
 		'* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
 		' Licensed under <%= _.pluck(pkg.license, "type").join(", ") %> */\n'
 
-		// add bower components to requirejs config file
-		, bower: {
-			target: {
-				rjsConfig: 'config.js'
-			}
-		}
-
 		// Task configuration.
 		, clean    : {
 			development  : ['dist/b_data-filter.js'],
@@ -49,11 +42,8 @@ module.exports = function(grunt) {
 	});
 
 	// These plugins provide necessary tasks.
-	grunt.loadNpmTasks('grunt-bower-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 
 	/**
@@ -61,16 +51,6 @@ module.exports = function(grunt) {
 	 * GRUNT TASKS
 	 * ----------------
 	 */
-
-
-		// js build
-	grunt.registerTask('jsBuild', ['bower', 'clean:js', 'requirejs', 'concat']);
-
-
-	// set config
-	grunt.registerTask('set_config', 'Set a config property.', function(name, val) {
-		grunt.config.set(name, val);
-	});
 
 	//Build and compile all vor development
 	grunt.registerTask('devRelease', ['clean:development', 'copy:development']);
