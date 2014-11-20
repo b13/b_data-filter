@@ -1,0 +1,13 @@
+{
+	"name": "b_data-filter",
+	"dependencies": {
+		"underscore": "~1.7.0"
+	},
+	"homepage": "https://github.com/b13/b_data-filter",
+	"ignore": [
+		".*",
+		"config.js",
+		"Gruntfile.js",
+		"package.json"
+	]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "b_data-filter",
+  "description": "A small lib for filtering data.",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "author": {
+    "name": "b:dreizehn GmbH",
+    "email": "info@b13.de",
+    "url": "http://b13.de/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b13/b_data-filter.git"
+  },
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "grunt": "~0.4.1",
+    "grunt-bower-requirejs": "^1.1.0",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "^0.6.0",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-uglify": "*"
+  },
+  "license": {
+    "type": "MIT"
+  }
+}
